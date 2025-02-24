@@ -5,7 +5,7 @@ import { MdDelete } from "react-icons/md";
 
 export const loader = async ({ params }) => {
   const res = await axios.get(
-    `${import.meta.env.VITE_URL_API}/users/${params.id}`
+    `${import.meta.env.VITE_URL_API}/users/${params.id}` || `${import.meta.env.BACKENDURL}/users/${params.id}`
   );
   return res.data;
 };
