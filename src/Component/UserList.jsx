@@ -43,7 +43,7 @@ const UserList = () => {
         </button>
       </Form>
       <ul className="ps-2 pt-2 h-[37.3rem] scroll-smooth overflow-y-auto no-scrollbar">
-        {users.map((user) => (
+        {users?.map((user) => (
           <li
             className="font-bold text-lg text-yellow-300 flex justify-between"
             key={user._id}
